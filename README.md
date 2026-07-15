@@ -1,20 +1,74 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Consultor Edgar Moya Web
 
-# Run and deploy your AI Studio app
+Plataforma web profesional para servicios de consultoría.
 
-This contains everything you need to run your app locally.
+## Descripción
 
-View your app in AI Studio: https://ai.studio/apps/9c5b9ae4-5a40-4769-89f5-eb8231219908
+Aplicación web desarrollada para el Consultor Edgar Moya, ofreciendo una presencia digital moderna y funcional para la prestación de servicios de consultoría.
 
-## Run Locally
+## Características
 
-**Prerequisites:**  Node.js
+- Diseño responsive y moderno
+- Interfaz de usuario intuitiva
+- Optimización para motores de búsqueda (SEO)
+- Rendimiento optimizado
 
+## Tecnologías
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Instalación
+
+### Prerrequisitos
+
+- Node.js 18.0 o superior
+- npm o yarn
+
+### Pasos
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/consultor-edgar-moya-web.git
+   ```
+
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Configurar variables de entorno:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. Ejecutar en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+5. Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
+
+## Scripts Disponibles
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Ejecutar servidor de desarrollo |
+| `npm run build` | Generar build de producción |
+| `npm run start` | Iniciar servidor de producción |
+| `npm run lint` | Ejecutar linter |
+
+## Estructura del Proyecto
+
+```
+├── app/              # Rutas y páginas
+├── components/       # Componentes reutilizables
+├── lib/              # Utilidades y funciones helper
+├── public/           # Archivos estáticos
+└── styles/           # Estilos globales
+```
+
+## Licencia
+
+MIT © Edgar Moya
