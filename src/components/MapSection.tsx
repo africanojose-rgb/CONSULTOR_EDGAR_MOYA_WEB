@@ -1,17 +1,19 @@
 import { MapPin, ExternalLink } from 'lucide-react';
+import { MAPS_URL } from '../data';
 
 export default function MapSection() {
-  const mapImgUrl = 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_VkZx7-5j9gdXz5igh0p9eg0i3lBXPSmSRxLkSpTSvIJtO9q_KxQGNemth55bS2lEu9zejEwxyQoQbihAHGSyYBnUl4HqB3phgkeacW2iV29DJevkPVgb2klkvreO1hdyFEntW6_PqRQHM6a292e_3J57tWD6QCiAbj65UCaNod3jqGKlYxCuFOWwwW5mvRgCq058N7Db3mKnK3QxnPbRcj3FlAl-UnRRPOjBEoZMH9qqUGocugp5-ijAsmN8CvEzbwyrtYeu130';
-  const googleMapsUrl = 'https://maps.google.com/?q=Caracas,Venezuela';
-
   return (
     <section id="location" className="h-[450px] w-full relative overflow-hidden group border-t border-dark-border/40">
       {/* Background Stylized Map Image */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="w-full h-full bg-cover bg-center grayscale opacity-80 group-hover:scale-105 transition-transform duration-700"
-          style={{ backgroundImage: `url(${mapImgUrl})` }}
-        ></div>
+        <img
+          src="/map.jpg"
+          alt="Mapa de ubicación del despacho en Caracas, Venezuela"
+          loading="lazy"
+          width="512"
+          height="512"
+          className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 transition-transform duration-700"
+        />
         {/* Dark elegant mask overlay */}
         <div className="absolute inset-0 bg-dark-bg/40 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/10 via-transparent to-dark-bg"></div>
@@ -31,12 +33,12 @@ export default function MapSection() {
           </p>
 
           <a
-            href={googleMapsUrl}
+            href={MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-gold hover:text-white text-white border border-gold/30 px-6 py-3 rounded-lg font-sans text-xs font-bold uppercase tracking-wider transition-all duration-300"
           >
-            Ver en Google Maps
+            Ver Ubicación
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

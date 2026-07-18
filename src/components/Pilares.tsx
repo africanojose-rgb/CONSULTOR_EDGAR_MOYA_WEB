@@ -1,7 +1,8 @@
+import type { ComponentType } from 'react';
 import { Lock, Shield, Zap, User, Globe } from 'lucide-react';
 import { PILARES_DATA } from '../data';
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, ComponentType<{ className?: string }>> = {
   lock: Lock,
   shield: Shield,
   zap: Zap,

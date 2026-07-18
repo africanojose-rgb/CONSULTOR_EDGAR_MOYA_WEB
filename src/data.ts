@@ -1,5 +1,18 @@
 import { LegalService, PilarCard, ProcessStep } from './types';
 
+export const SITE_URL = 'https://edgarmoya.com';
+export const EMAIL = 'jamadus@gmail.com';
+export const PHONE = '+58 212 000-0000';
+export const PHONE_TEL = 'tel:+582120000000';
+export const WHATSAPP_NUMBER = '584249050476';
+export const WHATSAPP_MESSAGE = 'Hola%20Abogado%20Edgar%20Moya%2C%20quisiera%20agendar%20una%20consulta%20jur%C3%ADdica.';
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+export const ADDRESS = 'Edificio Torre Premium, Piso 12, Las Mercedes. Caracas, Venezuela.';
+export const MAPS_URL = 'https://maps.google.com/?q=Caracas,Venezuela';
+
+// Replace with your Formspree form ID: https://formspree.io
+export const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
 export const SERVICES_DATA: LegalService[] = [
   {
     id: 'administrativo',
@@ -120,7 +133,7 @@ export const PILARES_DATA: PilarCard[] = [
   {
     id: 'experiencia',
     title: 'Experiencia',
-    description: 'Más de 25 años de sólida práctica en litigación y consultoría ante escenarios regulatorios y comerciales altamente complejos, garantizando el mejor criterio estratégico.',
+    description: 'Más de 39 años de sólida práctica en litigación y consultoría ante escenarios regulatorios y comerciales altamente complejos, garantizando el mejor criterio estratégico.',
     iconName: 'shield',
     variant: 'primary'
   },
