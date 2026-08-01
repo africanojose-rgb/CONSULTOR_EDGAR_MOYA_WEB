@@ -10,9 +10,6 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_ME
 export const ADDRESS = 'Edificio Torre Premium, Piso 12, Las Mercedes. Caracas, Venezuela.';
 export const MAPS_URL = 'https://maps.google.com/?q=Caracas,Venezuela';
 
-// Replace with your Formspree form ID: https://formspree.io
-export const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
-
 export const SERVICES_DATA: LegalService[] = [
   {
     id: 'administrativo',
